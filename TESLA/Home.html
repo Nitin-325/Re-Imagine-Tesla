@@ -1,0 +1,303 @@
+<!-- 
+    
+    Run file from TESLA folder in Home.html
+    in Folder MODELDESIGN open terminal and run command "npm run dev"
+    open XAMPP control panel & start the Apache & MySQL server.
+
+ --> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESLA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <main>
+        <div class="smallCar">
+                <div class="car1">
+                    <img src="./Images/Model-3.png" alt="">
+                </div>
+                <div class="car2">
+                    <img src="./Images/Model-S.png" alt="">
+                </div>
+                <div class="car3">
+                    <img src="./Images/Model-X.png" alt="">
+                </div>
+                <div class="car4">
+                    <img src="./Images/Model-Y.png" alt="">
+                </div>
+                <div class="car5">
+                    <img src="./Images/CyberTruck.png" alt="">
+                </div>
+            </div>
+        <div class="loading">
+            <video autoplay muted src="Videos/Tesla_Logo.mp4"></video>
+        </div>
+        <div class="page">
+        </div>
+        <div class="hero">
+            <div class="steering-wheel-container" id="steering-wheel">
+                <div class="center-point"></div>
+                <div class="cursor-pointer" id="cursor"></div>
+            </div>
+        </div>
+        <div class="page1">
+            <menu>
+            </menu>
+            
+            <header class="header">
+                <div class="flex">
+                   <h6 href="" class="logo">Re-imagine<span>Tesla</span></h6>
+                </div>
+             </header>
+            <div id="name">
+                <div id="logo"><img src="Images/Lobo.jpg.jpg" alt="">
+                </div>
+                <div id="heading">
+                    <h4>❝𝐓𝐇𝐄 𝐅𝐔𝐓𝐔𝐑𝐄 𝐈𝐒 𝐒𝐔𝐒𝐓𝐀𝐈𝐍𝐀𝐁𝐋𝐄 𝐄𝐍𝐄𝐑𝐆𝐘❞</h4>
+                    <h6>We`re Building a World Powered By Solar Energy, Running On <br> Batteries And Transported By Electric Vehicles.</h6>
+                </div>
+            </div>
+            <div id="one">
+                <h1>𝙊𝙉𝙀 𝙈𝙄𝙎𝙎𝙄𝙊𝙉</h1>
+                <h1>𝙎𝙐𝙎𝙏𝘼𝙄𝙉𝘼𝘽𝙇𝙀 𝙀𝙉𝙀𝙍𝙂𝙔</h1>
+            </div>
+            <div id="number">
+                <div id="part1">
+                    <h5>100k+</h5>
+                    <h6>Employees</h6>
+                </div>
+                <div id="part2">
+                    <h5>20.4 Mmt</h5>
+                    <h6>CO2e Avoided in 2023</h6>
+                </div>
+            </div>
+        </div>
+        <div class="page3" id="page3">
+            <div class="part1">
+                <h2>MODEL S</h2>
+                <img src="Images/Model-S.png" alt="">
+            </div>
+            <div class="part2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8VJzNncHYAHisQJDAmND6DipAAGSfU19m5v8IAABwADCAXKTX//v8AGCf09fYAABOJkJUAABjh4uPM0NM6SFEABRwAAA7Fx8l8g4np6uwAEyOjqK0AAAAAABUUJzVxeX+aoKSRmJ1sdXsAAAkwQEoJIC9FUlra3d8oOEJbZGs1Q0xKVV29wcQgMDpJVFsAxTfIAAADJklEQVR4nO3YfVOqQBTHcQQSFUVEMZFM7cHKsvv+390FzCl2zyKmNPfh+/mjGWdOx/MDZBcsCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/NnW7WOSUv3KrtRW2j8nVZ1n6jTdvPyuxtj39ccYhYFXIfAiu9Q66TkVrm+USWYP5tbBYqwO3o48L32skbAdVY0Rfh1j+LJpVXGD8hjDlmsu9mJ1kplvLF6mK23wUZB9o9ZEUDmGEw++1nb8qoiu37Wscn3gZNOJxcHLsH7CZfqkVddPaHU2jmGKlnc1L9c+v/juwSHXQepNlICWNY4jV7IJt/rI+4RCtfNwr1efkNAaP0UbwxhzrXh9tezvFRGX7senVn8kNt+9Xune3yZCaZHQFcptqbp2wuKgd2NpjF/a7asw/DCZZgP53cPHgVh8ijyh269dfsI5PMXgM8g4yhJOxcP7PfuEwvUoH7yGElr7kIPsz2fCwfnnL2dMKGsu4cHxc9ip9qyU7xPOhwZq9/oJu7mJaYxzEsbXUc8oWtwLCVtuFN6GgsXq+wkXfmbaE4eJfP1uWj/h7tawChV66i6lYsXPFq5E7V4/4XVF3+yiOSOhleS3WzmlG6qbth9PuLxAQqvdEzdBy5aTagH/xnOY3WJncegLbt+EH/hsIZVmNpdI6Oh9gwucw8ykK+hYwio3lyozuzf3/IROstP63gUXSVil5jpqO6aEm7hoMjj0khvmCYVfhTXxm05Yd6NQnfB4V1PCWeMJzz+H7utA3RgIPZtL+PQubOg/d/a29FtMhP/pG+80rcOjzRdF79K5bS7hWn44/BDN9IDrKBAqzauF+DiZ6a1/JqEVe+aFyFc3bZkkOnE9NAh+lSobTDh8TE0L7XRraRfpTWTe5Z2SMH0tb9O/nXCRvzA7cqdJ0kB6wZUGwmvAYeqZX4n5WsK2LxZ63lQtzQeNpIRhVu6YE863tm1v1Ucg1TiR3lGOpLadbdVrTW3CG0P5ShupGLRr+sLaD6TNu8xz9v+H4wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7zfIQhIxvpbCPMAAAAASUVORK5CYII=" alt="">
+                <h4>Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S</h4>
+                <div id="circle">
+                    <h2>1.99s</h2>
+                    <h6>0.60 Mph</h6>
+                </div>
+                <h5>The riding future</h5>
+                <div id="square">
+                    <div id="range">
+                        <h3>359 mi</h3>
+                        <h6>range (EPA est.)</h6>
+                    </div>
+                    <div id="speed">
+                        <h3>200 mph</h3>
+                        <h6>Top speed</h6>
+                    </div>
+                    <div id="battery">
+                        <h3>5 Year</h3>
+                        <h6>Battery warrenty</h6>
+                    </div>
+                    <div id="power">
+                        <h3>1020 hp</h3>
+                        <h6>Peak power</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="part1">
+                <h2>MODEL 3</h2>
+                <img src="Images/Model-3.png" alt="">
+            </div>
+            <div class="part2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8VJzNncHYAHisQJDAmND6DipAAGSfU19m5v8IAABwADCAXKTX//v8AGCf09fYAABOJkJUAABjh4uPM0NM6SFEABRwAAA7Fx8l8g4np6uwAEyOjqK0AAAAAABUUJzVxeX+aoKSRmJ1sdXsAAAkwQEoJIC9FUlra3d8oOEJbZGs1Q0xKVV29wcQgMDpJVFsAxTfIAAADJklEQVR4nO3YfVOqQBTHcQQSFUVEMZFM7cHKsvv+390FzCl2zyKmNPfh+/mjGWdOx/MDZBcsCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/NnW7WOSUv3KrtRW2j8nVZ1n6jTdvPyuxtj39ccYhYFXIfAiu9Q66TkVrm+USWYP5tbBYqwO3o48L32skbAdVY0Rfh1j+LJpVXGD8hjDlmsu9mJ1kplvLF6mK23wUZB9o9ZEUDmGEw++1nb8qoiu37Wscn3gZNOJxcHLsH7CZfqkVddPaHU2jmGKlnc1L9c+v/juwSHXQepNlICWNY4jV7IJt/rI+4RCtfNwr1efkNAaP0UbwxhzrXh9tezvFRGX7senVn8kNt+9Xune3yZCaZHQFcptqbp2wuKgd2NpjF/a7asw/DCZZgP53cPHgVh8ijyh269dfsI5PMXgM8g4yhJOxcP7PfuEwvUoH7yGElr7kIPsz2fCwfnnL2dMKGsu4cHxc9ip9qyU7xPOhwZq9/oJu7mJaYxzEsbXUc8oWtwLCVtuFN6GgsXq+wkXfmbaE4eJfP1uWj/h7tawChV66i6lYsXPFq5E7V4/4XVF3+yiOSOhleS3WzmlG6qbth9PuLxAQqvdEzdBy5aTagH/xnOY3WJncegLbt+EH/hsIZVmNpdI6Oh9gwucw8ykK+hYwio3lyozuzf3/IROstP63gUXSVil5jpqO6aEm7hoMjj0khvmCYVfhTXxm05Yd6NQnfB4V1PCWeMJzz+H7utA3RgIPZtL+PQubOg/d/a29FtMhP/pG+80rcOjzRdF79K5bS7hWn44/BDN9IDrKBAqzauF+DiZ6a1/JqEVe+aFyFc3bZkkOnE9NAh+lSobTDh8TE0L7XRraRfpTWTe5Z2SMH0tb9O/nXCRvzA7cqdJ0kB6wZUGwmvAYeqZX4n5WsK2LxZ63lQtzQeNpIRhVu6YE863tm1v1Ucg1TiR3lGOpLadbdVrTW3CG0P5ShupGLRr+sLaD6TNu8xz9v+H4wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7zfIQhIxvpbCPMAAAAASUVORK5CYII=" alt="">
+                <h4>The most powerful ever fitted to Model 3, enabling more than 500 horsepower and 0 to 60 mph in as little as 2.9 seconds.</h4>
+                <div id="circle">
+                    <h2>1.46s</h2>
+                    <h6>0.60 Mph</h6>
+                </div>
+                <h5>The riding future</h5>
+                <div id="square">
+                    <div id="range">
+                        <h3>259 mi</h3>
+                        <h6>range (EPA est.)</h6>
+                    </div>
+                    <div id="speed">
+                        <h3>178 mph</h3>
+                        <h6>Top speed</h6>
+                    </div>
+                    <div id="battery">
+                        <h3>5 Year</h3>
+                        <h6>Battery warrenty</h6>
+                    </div>
+                    <div id="power">
+                        <h3>1040 hp</h3>
+                        <h6>Peak power</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page5">
+            <div class="part1">
+                <h2>MODEL X</h2>
+                <img src="Images/Model-X.png" alt="">
+            </div>
+            <div class="part2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8VJzNncHYAHisQJDAmND6DipAAGSfU19m5v8IAABwADCAXKTX//v8AGCf09fYAABOJkJUAABjh4uPM0NM6SFEABRwAAA7Fx8l8g4np6uwAEyOjqK0AAAAAABUUJzVxeX+aoKSRmJ1sdXsAAAkwQEoJIC9FUlra3d8oOEJbZGs1Q0xKVV29wcQgMDpJVFsAxTfIAAADJklEQVR4nO3YfVOqQBTHcQQSFUVEMZFM7cHKsvv+390FzCl2zyKmNPfh+/mjGWdOx/MDZBcsCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/NnW7WOSUv3KrtRW2j8nVZ1n6jTdvPyuxtj39ccYhYFXIfAiu9Q66TkVrm+USWYP5tbBYqwO3o48L32skbAdVY0Rfh1j+LJpVXGD8hjDlmsu9mJ1kplvLF6mK23wUZB9o9ZEUDmGEw++1nb8qoiu37Wscn3gZNOJxcHLsH7CZfqkVddPaHU2jmGKlnc1L9c+v/juwSHXQepNlICWNY4jV7IJt/rI+4RCtfNwr1efkNAaP0UbwxhzrXh9tezvFRGX7senVn8kNt+9Xune3yZCaZHQFcptqbp2wuKgd2NpjF/a7asw/DCZZgP53cPHgVh8ijyh269dfsI5PMXgM8g4yhJOxcP7PfuEwvUoH7yGElr7kIPsz2fCwfnnL2dMKGsu4cHxc9ip9qyU7xPOhwZq9/oJu7mJaYxzEsbXUc8oWtwLCVtuFN6GgsXq+wkXfmbaE4eJfP1uWj/h7tawChV66i6lYsXPFq5E7V4/4XVF3+yiOSOhleS3WzmlG6qbth9PuLxAQqvdEzdBy5aTagH/xnOY3WJncegLbt+EH/hsIZVmNpdI6Oh9gwucw8ykK+hYwio3lyozuzf3/IROstP63gUXSVil5jpqO6aEm7hoMjj0khvmCYVfhTXxm05Yd6NQnfB4V1PCWeMJzz+H7utA3RgIPZtL+PQubOg/d/a29FtMhP/pG+80rcOjzRdF79K5bS7hWn44/BDN9IDrKBAqzauF+DiZ6a1/JqEVe+aFyFc3bZkkOnE9NAh+lSobTDh8TE0L7XRraRfpTWTe5Z2SMH0tb9O/nXCRvzA7cqdJ0kB6wZUGwmvAYeqZX4n5WsK2LxZ63lQtzQeNpIRhVu6YE863tm1v1Ucg1TiR3lGOpLadbdVrTW3CG0P5ShupGLRr+sLaD6TNu8xz9v+H4wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7zfIQhIxvpbCPMAAAAASUVORK5CYII=" alt="">
+                <h4>Model X platforms unite powertrain and battery technologies for an unrivaled combination of performance, range and efficiency.</h4>
+                <div id="circle">
+                    <h2>3.99s</h2>
+                    <h6>0.60 Mph</h6>
+                </div>
+                <h5>The riding future</h5>
+                <div id="square">
+                    <div id="range">
+                        <h3>259 mi</h3>
+                        <h6>range (EPA est.)</h6>
+                    </div>
+                    <div id="speed">
+                        <h3>210 mph</h3>
+                        <h6>Top speed</h6>
+                    </div>
+                    <div id="battery">
+                        <h3>5 Year</h3>
+                        <h6>Battery warrenty</h6>
+                    </div>
+                    <div id="power">
+                        <h3>1200 hp</h3>
+                        <h6>Peak power</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page5-1">
+            <div class="part1">
+                <h2>MODEL Y</h2>
+                <img src="Images/Model-Y.png" alt="">
+            </div>
+            <div class="part2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8VJzNncHYAHisQJDAmND6DipAAGSfU19m5v8IAABwADCAXKTX//v8AGCf09fYAABOJkJUAABjh4uPM0NM6SFEABRwAAA7Fx8l8g4np6uwAEyOjqK0AAAAAABUUJzVxeX+aoKSRmJ1sdXsAAAkwQEoJIC9FUlra3d8oOEJbZGs1Q0xKVV29wcQgMDpJVFsAxTfIAAADJklEQVR4nO3YfVOqQBTHcQQSFUVEMZFM7cHKsvv+390FzCl2zyKmNPfh+/mjGWdOx/MDZBcsCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/NnW7WOSUv3KrtRW2j8nVZ1n6jTdvPyuxtj39ccYhYFXIfAiu9Q66TkVrm+USWYP5tbBYqwO3o48L32skbAdVY0Rfh1j+LJpVXGD8hjDlmsu9mJ1kplvLF6mK23wUZB9o9ZEUDmGEw++1nb8qoiu37Wscn3gZNOJxcHLsH7CZfqkVddPaHU2jmGKlnc1L9c+v/juwSHXQepNlICWNY4jV7IJt/rI+4RCtfNwr1efkNAaP0UbwxhzrXh9tezvFRGX7senVn8kNt+9Xune3yZCaZHQFcptqbp2wuKgd2NpjF/a7asw/DCZZgP53cPHgVh8ijyh269dfsI5PMXgM8g4yhJOxcP7PfuEwvUoH7yGElr7kIPsz2fCwfnnL2dMKGsu4cHxc9ip9qyU7xPOhwZq9/oJu7mJaYxzEsbXUc8oWtwLCVtuFN6GgsXq+wkXfmbaE4eJfP1uWj/h7tawChV66i6lYsXPFq5E7V4/4XVF3+yiOSOhleS3WzmlG6qbth9PuLxAQqvdEzdBy5aTagH/xnOY3WJncegLbt+EH/hsIZVmNpdI6Oh9gwucw8ykK+hYwio3lyozuzf3/IROstP63gUXSVil5jpqO6aEm7hoMjj0khvmCYVfhTXxm05Yd6NQnfB4V1PCWeMJzz+H7utA3RgIPZtL+PQubOg/d/a29FtMhP/pG+80rcOjzRdF79K5bS7hWn44/BDN9IDrKBAqzauF+DiZ6a1/JqEVe+aFyFc3bZkkOnE9NAh+lSobTDh8TE0L7XRraRfpTWTe5Z2SMH0tb9O/nXCRvzA7cqdJ0kB6wZUGwmvAYeqZX4n5WsK2LxZ63lQtzQeNpIRhVu6YE863tm1v1Ucg1TiR3lGOpLadbdVrTW3CG0P5ShupGLRr+sLaD6TNu8xz9v+H4wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7zfIQhIxvpbCPMAAAAASUVORK5CYII=" alt="">
+                <h4>Model Y is most versatile Tesla ever, combining performance, safety, and utility with leading electric technology.</h4>
+                <div id="circle">
+                    <h2>3.5s</h2>
+                    <h6>0.60 Mph</h6>
+                </div>
+                <h5>The riding future</h5>
+                <div id="square">
+                    <div id="range">
+                        <h3>330 mi</h3>
+                        <h6>range (EPA est.)</h6>
+                    </div>
+                    <div id="speed">
+                        <h3>135 mph</h3>
+                        <h6>Top speed</h6>
+                    </div>
+                    <div id="battery">
+                        <h3>5 Year</h3>
+                        <h6>Battery warrenty</h6>
+                    </div>
+                    <div id="power">
+                        <h3>450 hp</h3>
+                        <h6>Peak power</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page5-2">
+            <div class="part1">
+                <h2>CYBERTRUCK</h2>
+                <img src="Images/CyberTruck.png" alt="">
+            </div>
+            <div class="part2">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8VJzNncHYAHisQJDAmND6DipAAGSfU19m5v8IAABwADCAXKTX//v8AGCf09fYAABOJkJUAABjh4uPM0NM6SFEABRwAAA7Fx8l8g4np6uwAEyOjqK0AAAAAABUUJzVxeX+aoKSRmJ1sdXsAAAkwQEoJIC9FUlra3d8oOEJbZGs1Q0xKVV29wcQgMDpJVFsAxTfIAAADJklEQVR4nO3YfVOqQBTHcQQSFUVEMZFM7cHKsvv+390FzCl2zyKmNPfh+/mjGWdOx/MDZBcsCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/NnW7WOSUv3KrtRW2j8nVZ1n6jTdvPyuxtj39ccYhYFXIfAiu9Q66TkVrm+USWYP5tbBYqwO3o48L32skbAdVY0Rfh1j+LJpVXGD8hjDlmsu9mJ1kplvLF6mK23wUZB9o9ZEUDmGEw++1nb8qoiu37Wscn3gZNOJxcHLsH7CZfqkVddPaHU2jmGKlnc1L9c+v/juwSHXQepNlICWNY4jV7IJt/rI+4RCtfNwr1efkNAaP0UbwxhzrXh9tezvFRGX7senVn8kNt+9Xune3yZCaZHQFcptqbp2wuKgd2NpjF/a7asw/DCZZgP53cPHgVh8ijyh269dfsI5PMXgM8g4yhJOxcP7PfuEwvUoH7yGElr7kIPsz2fCwfnnL2dMKGsu4cHxc9ip9qyU7xPOhwZq9/oJu7mJaYxzEsbXUc8oWtwLCVtuFN6GgsXq+wkXfmbaE4eJfP1uWj/h7tawChV66i6lYsXPFq5E7V4/4XVF3+yiOSOhleS3WzmlG6qbth9PuLxAQqvdEzdBy5aTagH/xnOY3WJncegLbt+EH/hsIZVmNpdI6Oh9gwucw8ykK+hYwio3lyozuzf3/IROstP63gUXSVil5jpqO6aEm7hoMjj0khvmCYVfhTXxm05Yd6NQnfB4V1PCWeMJzz+H7utA3RgIPZtL+PQubOg/d/a29FtMhP/pG+80rcOjzRdF79K5bS7hWn44/BDN9IDrKBAqzauF+DiZ6a1/JqEVe+aFyFc3bZkkOnE9NAh+lSobTDh8TE0L7XRraRfpTWTe5Z2SMH0tb9O/nXCRvzA7cqdJ0kB6wZUGwmvAYeqZX4n5WsK2LxZ63lQtzQeNpIRhVu6YE863tm1v1Ucg1TiR3lGOpLadbdVrTW3CG0P5ShupGLRr+sLaD6TNu8xz9v+H4wYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/7zfIQhIxvpbCPMAAAAASUVORK5CYII=" alt="">
+                <h4>The Tesla Cybertruck is a distinctive all electric pickup truck that combines futuristics design with robust performance.</h4>
+                <div id="circle">
+                    <h2>4.1s</h2>
+                    <h6>0.60 Mph</h6>
+                </div>
+                <h5>The riding future</h5>
+                <div id="square">
+                    <div id="range">
+                        <h3>460 mi</h3>
+                        <h6>range (EPA est.)</h6>
+                    </div>
+                    <div id="speed">
+                        <h3>120 mph</h3>
+                        <h6>Top speed</h6>
+                    </div>
+                    <div id="battery">
+                        <h3>8 Year</h3>
+                        <h6>Battery warrenty</h6>
+                    </div>
+                    <div id="power">
+                        <h3>800 hp</h3>
+                        <h6>Peak power</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page8" id="page8">
+            <div class="part1">
+                <img src="Images/charging_station1" alt="">
+            </div>
+            <div class="part2">
+                <h1 class="first">CHARGING</h1>
+                <h4>Charging With Convenience<br>& Available Anywhere With<br>Electricity</h4>
+                <h1 id="ten">10K+</h1>
+                <h5>CHARGING STATIONS WORLDWIDE</h5>
+            </div>
+            <div class="part3">
+                <img class="img1" src="Images/charging_station2" alt="">
+                <img class="img2" src="Images/charging_station3" alt="">
+            </div>
+        </div>
+        <div class="page9">
+            <h1>PLUG IN, CHARGE AND GO</h1>
+            <h5>With plenty of range for both daily drives and road trips, Tesla vehicles get<br>you where you want to go. Charging is fast, convenient and available<br>anywhere with electricity.</h5>
+        </div>
+        <div class="page10">
+            <div class="part1">
+                <h1>CHARGING<br>STATION<br>FINDER______________________</h1>
+                <h5>Our Tesla automatically finds the best routes and suggests charging stations along the way.</h5>
+                <!-- <button>Explore more <i class="ri-arrow-right-line"></i></button> -->
+            </div>
+            <div class="part2">
+                <div id="first">
+                    <img src="Images/Optimize_route" alt="">
+                    <h3>Optimize route</h3>
+                    <h5>Finds the best route to avoid traffic and change if needed. Ensures a smooh and efficient journey by providing real-time updates</h5>
+                </div>
+                <div id="second">
+                    <img src="Images/battery_measures" alt="">
+                    <h3>Measures battery</h3>
+                    <h5>Gives real-time battery estimates based on your driving style. Optimizes battery life by adopting to your driving patterns and conditions.</h5>
+                </div>
+                <div id="third">
+                    <img src="Images/super_charger" alt="">
+                    <h3>Recommends chargers</h3>
+                    <h5>Offers charging location recommendations along your route. Prioritizes fast and convenient charging stations to minimize downtime.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="page6" id="page6">
+            <img src="./Images/LastLogoImage.jpeg"></img>
+            <h2>THE PERSONAL<br>TESLA SHOW ROOM</h2>
+            <button><a href="http://localhost:5173/index.html">view models</a></button>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js" integrity="sha512-vnmn/Qqn6aG0POAc9mIGzjq0IybrvxJXYDafNvp9JSnDGxeF3pbkSqLvf+YGd5ku63pT7sa/jxHn7/d0mU8+tA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

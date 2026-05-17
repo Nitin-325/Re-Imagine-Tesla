@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: #000;
+}
+
+/* Back button styles */
+.first_container .back-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.first_container .back-button:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.first_container .back-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.first_container .back-button {
+    animation: pulse 2s infinite;
+}
+
+.first_container .color-panel {
+    position: fixed;
+    bottom: 25px;
+    left: 210px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.first_container .color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transition: transform 0.2s;
+}
+
+.first_container .color-option:hover {
+    transform: scale(1.1);
+}
+
+.first_container .color-panel-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.first_container .color-panel-btn:hover {
+    transform: scale(1.05);
+}
+
+.first_container .color-option:nth-child(1) { background-color: #FFB6C1; }
+.first_container .color-option:nth-child(2) { background-color: #FF00FF; }
+.first_container .color-option:nth-child(3) { background-color: #00FFFF; }
+.first_container .color-option:nth-child(4) { background-color: #FFFFFF; }
+.first_container .color-option:nth-child(5) { background-color: #000000; }
+.first_container .color-option:nth-child(6) { background-color: #FF0000; }
+.first_container .color-option:nth-child(7) { background-color: #00FF00; }
+.first_container .color-option:nth-child(8) { background-color: #0000FF; }
+.first_container .color-option:nth-child(9) { background-color: #FFA500; }
+.first_container .color-option:nth-child(10) { background-color: #800080; }
+.first_container .color-option:nth-child(11) { background-color: #008000; }
+.first_container .color-option:nth-child(12) { background-color: #800000; }
+.first_container .color-option:nth-child(13) { background-color: #808080; }
+.first_container .color-option:nth-child(14) { background-color: #C0C0C0; }
+.first_container .color-option:nth-child(15) { background-color: #FFFF00; }
+
+
+    /* Next Button */
+.first_container button:last-child {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.first_container button:last-child a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.first_container button:last-child:hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.first_container button:last-child:active {
+    transform: scale(0.95);
+}
+
+
+    /* Back Button */
+.first_container button:nth-last-child(2) {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.first_container button:nth-last-child(2) a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.first_container button:nth-last-child(2):hover {
+    transform: scale(1.05);
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.first_container button:nth-last-child(2):active {
+    transform: scale(0.95);
+}
+
+
