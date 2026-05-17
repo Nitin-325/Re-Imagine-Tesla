@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.head{
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: url(../New_Images/Header-All-Image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.head h3{
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px -2px 30px red;
+}
+
+.head p{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.head p a{
+    color: rgb(22, 25, 231);
+}
+
+.head p a:hover{
+    text-decoration: underline;
+}
+
+.shopping{
+    position: relative;
+    color: black;
+}
+
+.shopping .box-container .box img{
+    width: 65rem;
+}
+
+@keyframes border-rotate {
+    0% { border-color: red; }
+    10% { border-color: yellow; }
+    20% { border-color: rgb(0, 255, 0); }
+    30% { border-color: rgb(0, 204, 255); }
+    40% { border-color: rgb(255, 0, 149); }
+    50% { border-color: blue; }
+    60% { border-color: black; }
+    70% { border-color: rgb(255, 188, 3); }
+    80% { border-color: rgb(174, 0, 255); }
+    90% { border-color: rgb(0, 40, 126); }
+    100% { border-color: rgb(98, 245, 93); }
+}
+
+.shopping .box-container .box{
+    position: relative;
+    border: 5px solid;
+    border-radius: 50px;
+    margin: 20px;
+    text-align: center;
+    animation: border-rotate 5s linear infinite;
+}
+
+.shopping .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    animation: border-rotate 5s linear infinite;
+    pointer-events: none;
+}
+
+.shopping .box-container .box .name{
+    color: black;
+    background-color: blue;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 6px;
+    width: 20rem;
+    text-align: center;
+    text-decoration: underline dotted black;
+    margin-left: 200px;
+}
+
+.shopping .box-container .box .price{
+    margin-left: 91.3rem;
+    margin-top: -5.5rem;
+    background-color: red;
+    height: 50px;
+    width: 20rem;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 6px;
+    color: black;
+    text-align: center;
+    text-decoration: underline dotted black;
+}
+
+.shopping .box-container .box .qty{
+    margin-left: -80rem;
+    margin-top: 52px;
+    margin-bottom: 40px;
+    background-color: rgb(247, 114, 66);
+    border: 1px solid black;
+    border-radius: 7px;
+    height: 38px;
+    width: 5rem;
+    padding-left: 10px;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+}
+
+.shopping .box-container .box .btn{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    transition: all 0.3s ease;
+    color: black;
+    position: relative;
+    left: 45rem;
+    bottom: 3rem;
+}
+
+.shopping .box-container .box .btn:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.shopping .box-container .box form .option-btn{
+    background-color: rgb(247, 114, 66);
+    height: 40px;
+    width: 20rem;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 7px;
+    border: 1px solid black;
+    margin-left: 5px;
+    color: black;
+}
+
+.shopping .box-container .box .sub-total{
+    color: black;
+    height: 40px;
+    width: 23rem;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: 600;
+    padding-top: 7px;
+    background-color: rgb(247, 114, 66);
+    position: absolute;
+    bottom: 4.8rem;
+    left: 90rem;
+}
+
+.shopping .box-container .box .sub-total span{
+    color: black;
+}
+
+.shopping .delete a{
+    width: 25rem;
+    margin-top: 20px;
+}
+
+.shopping .cart-total p{
+    color: black;
+    font-size: 20px;
+    margin: 30px 57rem 30px 58rem;
+    font-weight: 900;
+    height: 40px;
+    border-radius: 7px;
+    padding-top: 4px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+.shopping .cart-total p span{
+    color: red;
+}
+
+.shopping .cart-total .flex :nth-child(1){
+    margin-left: 51.5rem;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}

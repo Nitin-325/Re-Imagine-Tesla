@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Login Page Styles */
+body {
+    background-image: url("../New_Images/RegisterBackgroundImage.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scrollbar-width: none;
+}
+
+.form-container {
+    background-color: transparent;
+    padding: 3rem;
+    position: relative;
+    border-radius: 20px;
+    max-width: 400px;
+    animation: formFloat 0.8s ease-in-out;
+}
+
+.form-container form {
+    height: 600px;
+    min-width: 450px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+
+.form-container form p {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: white;
+}
+
+@keyframes formFloat {
+    0% {
+        transform: translateY(300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.form-container h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px white;
+}
+
+.form-container form .box {
+    width: 35rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 1rem 0;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#login-form .btn {
+    width: 100%;
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-container form select option {
+    color: black;
+    background-color: transparent;
+}
+
+.message {
+    background-color: white;
+    padding: 4px 30px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px white;
+    font-size: 2rem;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+.form-container form .box::placeholder {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.form-container form .btn {
+    width: 50%;
+    background: transparent;
+    color: #fff;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-container form .btn:hover {
+    background: white;
+    color: black;
+}
+
+.form-container form select {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.form-container form select option {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+}

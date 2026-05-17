@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.head{
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: url(../New_Images/Header-All-Image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    position: relative;
+    overflow: hidden;
+}
+
+.head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.2s ease-out;
+}
+
+.head h3{
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px -2px 30px red;
+    animation: slideDown 0.8s ease-out;
+    position: relative;
+    transform-origin: center;
+}
+
+.head h3:hover {
+    transform: scale(1.05);
+    text-shadow: 3px -3px 40px red;
+}
+
+.head p{
+    font-size: 2.5rem;
+    color: white;
+    animation: slideUp 0.8s ease-out;
+    position: relative;
+    transform-origin: center;
+}
+
+.head p a{
+    color: rgb(22, 25, 231);
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-out;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.head p a:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}

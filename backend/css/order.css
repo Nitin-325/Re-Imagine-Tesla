@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.head{
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: url(../New_Images/Header-All-Image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.head h3{
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px -2px 30px red;
+}
+
+.head p{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.head p a{
+    color: rgb(22, 25, 231);
+}
+
+.head p a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.header .header-2 .flex .logo{
+    text-align: center;
+    color: white;
+    text-shadow: -2px -2px 2px blue;
+    letter-spacing: 1px;
+}
+
+.header .header-2 nav{
+    text-shadow: 0 -2px 5px blue;
+}
+
+.header .header-2 nav a{
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.home{
+    height: 70rem;
+    width: 100%;
+    background-image: url(../New_Images/MainHomeImage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home > .content h3{
+    margin-top: 6rem;
+    text-shadow: 2px 0 20px blue;
+}
+
+.home > .content p:first-of-type {
+    margin-top: 15rem;
+}
+
+.home > .content p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding: 1rem 0;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home > .content a {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background: none;
+    border: 1px solid white;
+    box-shadow: none;
+    backdrop-filter: none;
+    transition: all 0.3s ease;
+}
+
+.home > .content a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: all 0.3s ease;
+    animation: fadeIn 0.8s ease-out;
+}
+
+.heading {
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: url(../New_Images/Header-All-Image.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.heading h3 {
+    font-size: 5rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px -2px 30px red;
+    animation: slideDown 0.8s ease-out;
+}
+
+.heading p {
+    font-size: 2.5rem;
+    color: white;
+    animation: slideUp 0.8s ease-out;
+}
+
+.heading p a {
+    color: rgb(22, 25, 231);
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease-out;
+}
+
+.heading p a:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.search-form {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.search-form form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.search-form .box {
+    width: 100%;
+    max-width: 500px;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.search-form .btn {
+    padding: 1.2rem 2.5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.search-form .btn:hover {
+    background: #357abd;
+}
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.products .box {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.products .box:hover {
+    transform: translateY(-5px);
+}
+
+.products .box img {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.products .box .name {
+    font-size: 1.8rem;
+    color: #333;
+    padding: 0.5rem 0;
+}
+
+.products .box .price {
+    font-size: 2rem;
+    color: #4a90e2;
+    padding: 0.5rem 0;
+}
+
+.products .box .qty {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+}
+
+.products .box .btn {
+    width: 100%;
+    padding: 1rem;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.products .box .btn:hover {
+    background: #357abd;
+}
+
+.products .empty {
+    text-align: center;
+    font-size: 2rem;
+    color: #666;
+    padding: 2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

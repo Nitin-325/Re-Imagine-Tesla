@@ -1,0 +1,30 @@
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    mix-blend-mode: difference;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: particle-animation 0.5s forwards;
+}
+
+@keyframes particle-animation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
